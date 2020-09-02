@@ -1,0 +1,25 @@
+## DUET .GITIGNORE CONFIGURATION
+
+# Ignore things that we don’t want under version control
+node_modules
+lerna-debug.log
+npm-debug.log
+yarn-error.log
+package-lock.json
+.idea
+.eslintcache
+.DS_Store
+.vscode
+.stencil
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.vsix
+
+# Ignore things that are automatically copied from Duet
+src/js/components
+src/assets/fonts
+
+# Ignore dist build
+dist
