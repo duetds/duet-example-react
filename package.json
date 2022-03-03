@@ -12,10 +12,10 @@
     "@duetds/icons": "latest",
     "@duetds/react": "latest",
     "@duetds/tokens": "latest",
-    "node-sass": "^4.14.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "sass": "^1.49.9"
   },
   "eslintConfig": {
     "extends": "react-app"
