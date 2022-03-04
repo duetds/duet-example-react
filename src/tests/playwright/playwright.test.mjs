@@ -7,7 +7,7 @@ import { test, expect } from '@playwright/test';
 })
 
 
-test('react 16', async ({ page }, testInfo) => {
+test('app', async ({ page }, testInfo) => {
   await page.waitForLoadState("networkidle") // This resolves after 'networkidle'
   await page.waitForTimeout(1000 * testInfo.retry + 1)
   await page.setViewportSize({ width: 1600, height: 1200 })
@@ -16,13 +16,13 @@ test('react 16', async ({ page }, testInfo) => {
   // initial loading
   await page.goto("http://localhost:3000/");
   await page.locator('select');
-  expect(await page.screenshot()).toMatchSnapshot("react_16_1.png");
+  expect(await page.screenshot()).toMatchSnapshot("app_1.png");
 
 
   // Select 2
   await page.locator('select').selectOption('2');
   await page.waitForLoadState("networkidle")
-  expect(await page.screenshot()).toMatchSnapshot("react_16_2.png");
+  expect(await page.screenshot()).toMatchSnapshot("app_2.png");
 
 
 
@@ -31,19 +31,19 @@ test('react 16', async ({ page }, testInfo) => {
   await page.locator('input[type="number"]').fill('500');
   await page.locator('#step1').click();
   await page.waitForLoadState("networkidle")
-  expect(await page.screenshot()).toMatchSnapshot("react_16_3.png");
+  expect(await page.screenshot()).toMatchSnapshot("app_3.png");
 
 
   // summary loading
   await page.locator('#step2').click();
   await page.waitForLoadState("networkidle")
-  expect(await page.screenshot()).toMatchSnapshot("react_16_4.png");
+  expect(await page.screenshot()).toMatchSnapshot("app_4.png");
 
 
   // summary displaying
   await page.locator('#step3').click();
   await page.waitForLoadState("networkidle") // This resolves after 'networkidle'
-  expect(await page.screenshot()).toMatchSnapshot("react_16_5.png");
+  expect(await page.screenshot()).toMatchSnapshot("app_5.png");
 
 
 
