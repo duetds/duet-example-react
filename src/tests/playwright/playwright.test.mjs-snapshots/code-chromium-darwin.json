@@ -1,0 +1,16 @@
+{
+  "investmentAmount": {
+    "agreement": "2",
+    "additionalInvestment": 500
+  },
+  "investmentOrigin": {
+    "salary": false,
+    "gift": false,
+    "heritage": false,
+    "entrepreneurialIncome": false,
+    "assets": false,
+    "otherIncome": false,
+    "investment": false,
+    "extras": ""
+  }
+}

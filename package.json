@@ -5,7 +5,11 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "playwright": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.19.2"
   },
   "dependencies": {
     "@duetds/css": "latest",

@@ -95,6 +95,7 @@ function App() {
               />
               <DuetSpacer></DuetSpacer>
               <DuetButton
+                id="step1"
                 disabled={!formData.investmentAmount.agreement}
                 margin="none"
                 variation="primary"
@@ -111,7 +112,7 @@ function App() {
               </DuetParagraph>
               <InvestmentOrigin value={formData.investmentOrigin} onChange={handleInvestmentOriginChange} />
               <DuetSpacer></DuetSpacer>
-              <DuetButton margin="none" variation="primary" onClick={handleNextClick}>
+              <DuetButton id="step2" margin="none" variation="primary" onClick={handleNextClick}>
                 Seuraava
               </DuetButton>
             </DuetStep>
@@ -119,7 +120,7 @@ function App() {
               <DuetSpacer></DuetSpacer>
               <Summary agreement={agreementOptions[formData.investmentAmount.agreement]} formatter={formatter} />
               <DuetSpacer></DuetSpacer>
-              <DuetButton margin="none" variation="primary" expand onClick={() => setComplete(true)}>
+              <DuetButton id="step3" margin="none" variation="primary" expand onClick={() => setComplete(true)}>
                 Lähetä
               </DuetButton>
             </DuetStep>
