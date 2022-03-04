@@ -19,7 +19,7 @@
     "react": "16.14.0",
     "react-dom": "16.14.0",
     "react-scripts": "3.4.4",
-    "sass": "^1.49.9"
+    "sass": "1.49.9"
   },
   "eslintConfig": {
     "extends": "react-app"

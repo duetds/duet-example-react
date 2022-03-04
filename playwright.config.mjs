@@ -11,7 +11,7 @@ const config = {
   },
   webServer: {
     command: 'npm start',
-    url:"http://localhost:3000/",
+    url:"http://0.0.0.0:3000/",
     timeout: 120 * 1000,
     reuseExistingServer: false
   },
