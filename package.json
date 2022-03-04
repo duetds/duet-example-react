@@ -16,9 +16,9 @@
     "@duetds/icons": "latest",
     "@duetds/react": "latest",
     "@duetds/tokens": "latest",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-scripts": "3.4.3",
+    "react": "16.14.0",
+    "react-dom": "16.14.0",
+    "react-scripts": "3.4.4",
     "sass": "^1.49.9"
   },
   "eslintConfig": {

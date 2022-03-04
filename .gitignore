@@ -5,7 +5,6 @@ node_modules
 lerna-debug.log
 npm-debug.log
 yarn-error.log
-package-lock.json
 .idea
 .eslintcache
 .DS_Store
